@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Info Gempa</string>
+    <string name="current_earthquake">Gempa terkini</string>
+    <string name="list_earthquake">Riwayat Gempa</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="datetime">Waktu</string>
+    <string name="location">Lokasi</string>
+    <string name="depth">Kedalaman</string>
+    <string name="view_location">Lihat Lokasi</string>
+</resources>

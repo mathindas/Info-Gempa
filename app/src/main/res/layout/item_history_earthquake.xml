@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:layout_marginLeft="@dimen/margin_normal"
+    android:layout_marginRight="@dimen/margin_normal"
+    android:padding="@dimen/margin_normal"
+    android:background="@drawable/rounded_corner_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/ivMagnitude"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMagnitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvMagnitude"
+        android:contentDescription="@string/magnitude" />
+
+    <TextView
+        android:id="@+id/tvMagnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivMagnitude"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="magnitude" />
+
+    <ImageView
+        android:id="@+id/ivClock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_clock"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@+id/ivMagnitude"
+        app:layout_constraintStart_toStartOf="@+id/ivMagnitude"
+        app:layout_constraintTop_toBottomOf="@+id/ivMagnitude"
+        android:contentDescription="@string/datetime" />
+
+    <TextView
+        android:id="@+id/tvJamTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/ivClock"
+        app:layout_constraintStart_toEndOf="@+id/ivClock"
+        app:layout_constraintTop_toTopOf="@+id/ivClock"
+        tools:text="Jam" />
+
+    <ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_marker"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@+id/ivClock"
+        app:layout_constraintStart_toStartOf="@+id/ivClock"
+        app:layout_constraintTop_toBottomOf="@+id/ivClock"
+        tools:ignore="RtlSymmetry"
+        android:contentDescription="@string/location" />
+
+    <TextView
+        android:id="@+id/tvWilayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@+id/ivLocation"
+        app:layout_constraintTop_toTopOf="@+id/ivLocation"
+        android:paddingEnd="@dimen/padding_big"
+        tools:text="wilayah"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tvDirasakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/padding_big"
+        app:layout_constraintStart_toStartOf="@+id/tvWilayah"
+        app:layout_constraintTop_toBottomOf="@+id/tvWilayah"
+        tools:ignore="RtlSymmetry"
+        tools:text="dirasakan" />
+
+    <ImageView
+        android:id="@+id/ivDepth"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_depth"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@+id/ivLocation"
+        app:layout_constraintStart_toStartOf="@+id/ivLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tvDirasakan"
+        android:contentDescription="@string/depth" />
+
+
+    <TextView
+        android:id="@+id/tvKedalaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDepth"
+        app:layout_constraintStart_toEndOf="@+id/ivDepth"
+        app:layout_constraintTop_toTopOf="@+id/ivDepth"
+        tools:text="kedalaman" />
+
+    <TextView
+        android:id="@+id/tvLintangBujur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/ivDepth"
+        app:layout_constraintStart_toStartOf="@+id/tvKedalaman"
+        app:layout_constraintTop_toBottomOf="@+id/tvKedalaman"
+        tools:text="lintang" />
+
+    <Button
+        android:id="@+id/btnLihatLokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/view_location"
+        android:textSize="@dimen/text_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDirasakan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

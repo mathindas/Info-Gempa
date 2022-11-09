@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currentEarthquake">
+
+    <fragment
+        android:id="@+id/currentEarthquake"
+        android:name="com.rivaldo.informasigempa.ui.current.CurrentEarthquake"
+        android:label="@string/current_earthquake" />
+    <fragment
+        android:id="@+id/historyEarthquake"
+        android:name="com.rivaldo.informasigempa.ui.history.HistoryEarthquake"
+        android:label="@string/list_earthquake" />
+</navigation>

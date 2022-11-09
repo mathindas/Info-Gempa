@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Info Gempa</string>
+    <string name="current_earthquake">Current Earthquake</string>
+    <string name="list_earthquake">History Earthquake</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="datetime">Datetime</string>
+    <string name="location">Location</string>
+    <string name="depth">Depth</string>
+    <string name="view_location">View Location</string>
+</resources>
