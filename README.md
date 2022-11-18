@@ -19,6 +19,5 @@ Simple usage of:
 
 
 
-Made with love with
 
 [![My Skills](https://skills.thijs.gg/icons?i=kotlin&theme=dark)](https://skills.thijs.gg)
